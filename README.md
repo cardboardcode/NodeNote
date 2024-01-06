@@ -12,23 +12,20 @@
 
 # **NodeNote**
 
-# 1. 如何运行
+# 1. Run
 
-> 输入框架IME最好选择`搜狗输入法`
+### 1. How To Run From Source
+1. Install **Python3.6**
+2. Install dependencies with the following command:
 
-## 1. 不同平台的方式
+```bash
+pip install -r requirements.txt
+```
+3. Run the script using the following command: 
 
-### 1. 使用脚本方式运行
-1. 安装`python`: `Python版本` >= 3.6
-2. 安装依赖: `pip install -r requirements.txt`
-3. 运行脚本: `python example.py`
-
-### 2. 使用可执行文件运行(路径应为纯英文路径, 不要包含特殊字符)
-- Windows: 运行`NodeNote.exe`
-- Mac: 运行`NodeNote.app`
-- Linux: 
-    1. 安装依赖: `sudo apt install libxcb-xinerama0` << `(Unbuntu)`
-    2. 运行`NodeNote`二进制文件
+```bash
+python src/NodeNotePackage/Examples/example.py
+```
 
 ## 2. 打开后的工作区介绍
 
@@ -214,29 +211,4 @@
 3. 创建新`brand`
 4. `push`到我的`main`分支
 5. 我会根据实际情况进行合并分支
-
-
-# 版本更替
-
-## 后续规划
-代码重构, 增加双链, 除了网格布局新增其他布局样式, 绘图功能强化.
-
-## v2.36.21:
-- [x] 侧边栏画板
-- [x] 对齐功能
-- [x] 动画演示变成树的遍历
-- [x] 修复了序列化的一个错误
-- [x] 修复线条的编辑框下上文菜单的点击
-- [x] 所有场景的背景色更新sub view内的
-- [x] effect cutline 计算boundingRect()
-- [x] 修复搜索的错误
-- [x] 修复还没建立线条就删除的错误
-- [x] 修复了错误的majax解析闪退
-
-## v2.37.22:
-- [x] 修复了bug
-- [x] 增加了场景内的根据当前鼠标坐标批量移动小部件的功能
-
-## v2.37.23:
-- [x] 修复了一些bug
 
